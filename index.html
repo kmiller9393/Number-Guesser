@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Number Guesser</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="pink-center">Number <span id="white-text">Guesser</span></h1>
+    </header>
+    <form id="center">
+      <input type="text" id="form-input" placeholder="Guess between 1 & 100">   
+      <button type="submit" id="guess-button" disabled="true">Guess</button>
+      <input type="button" id="clear-button" value="Clear" disabled="true">
+    </form>
+    <main>  
+      <p id="last-guess">Your last guess was</p>
+      <p id="number-guess"></p>
+      <p id="recent-guess"></p>
+    </main>
+    <footer>
+      <input type="text" id="min-input" name="Min" placeholder="Enter Min Here">
+      <input type="text" id="max-input" name="Max" placeholder="Enter Max Here">
+      <button type="submit" id="submit-button" disabled="true">Submit</button>
+      <input type="reset" id="reset-button" value="Reset" disabled="true">
+    </footer>        
+    <script type="text/javascript" src="number-guesser.js"></script>
+  </body>
+</html>
